@@ -10,7 +10,7 @@ function displayMenuItems(menu) {
     // Get the menu container element from the HTML
     const menuContainer = document.getElementById("menu")
     // Loop through each category and its items in the menu object
-    for (const category in menu) {
+    for (let category in menu) {
         // Create an element to represent the category
         const categoryHead = document.createElement("h3")
         // Set the text content of the category element to the category name
@@ -18,11 +18,11 @@ function displayMenuItems(menu) {
         // Append the category element to the menu container
         menuContainer.appendChild(categoryHead)
         // Create an element to represent a list of items
-
+        const itemList = document.createElement("ul")
         // Append a list of items element to the menu container
-
+        menuContainer.appendChild(itemList)
         // Loop through the items in the category and create list items
-
+        
             // Create a list item element
 
             // Set the text content of the list item element to the item name
