@@ -59,7 +59,7 @@ function addToOrder(item) {
     const currentTotal = parseFloat(orderTotal.textContent);
     const totalPrice = currentTotal + item.price;
     // Update the text content of the order total element with the new total
-    orderTotal.textContent = totalPrice;
+    orderTotal.textContent = totalPrice.toFixed(2);
 }
 
 // Function to initialize the menu system
